@@ -20,6 +20,10 @@
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
 
+# Kotlin
+-keep class kotlin.Metadata { *; }
+-keep class kotlin.reflect.** { *; }
+
 ## Jackson https://github.com/FasterXML/jackson-docs/wiki/JacksonOnAndroid
 -keep class com.fasterxml.jackson.databind.ObjectMapper {
     public <methods>;
