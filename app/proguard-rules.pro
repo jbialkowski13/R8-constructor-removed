@@ -49,3 +49,6 @@
 -keepclassmembers,allowshrinking,allowobfuscation interface * {
     @retrofit2.http.* <methods>;
 }
+
+-printseeds seeds.txt
+-printusage usage.txt
