@@ -24,6 +24,9 @@
 -keep class kotlin.Metadata { *; }
 -keep class kotlin.reflect.** { *; }
 
+-dontwarn java.lang.invoke.**
+-dontwarn kotlinx.coroutines.CancellableContinuation
+
 ## Jackson https://github.com/FasterXML/jackson-docs/wiki/JacksonOnAndroid
 -keep class com.fasterxml.jackson.databind.ObjectMapper {
     public <methods>;
